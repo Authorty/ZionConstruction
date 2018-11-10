@@ -1,0 +1,214 @@
+﻿
+@model ZionConstruction.Models.ContactEmailModels
+
+@{
+    ViewBag.Title = "Contact | TheNorthernHandyman";
+}
+
+<!-- Contact Section -->
+<section id="contact">
+    <!--Container-->
+    <div class="container">
+        <div class="row">
+            <h3 class="text-muted"> <strong>Don't See Your City Listed?</strong> </h3>
+            <!--Primary Location-->
+            <div class="col-lg-5 text-muted">
+                <strong>Primary Location: <br /></strong>
+                <small>
+                    <a href="#"> - New London, WI </a><br />
+                    <a href="#"> - Three Lakes, WI</a><br />
+                </small>
+                <br />
+                <div class="col-lg-5 text-muted">
+                    <strong> We Also Serve The Fox Cities:<br /></strong>
+                    <small>
+                        <a href="#">- Appleton, WI</a><br />
+                        <a href="#">- Combined Locks, WI</a><br />
+                        <a href="#">- Kaukauna, WI</a><br />
+                        <a href="#">- Kimberly, WI</a><br />
+                        <a href="#">- Little Chute, WI</a><br />
+                        <a href="#">- Grand Chute, WI</a><br />
+                        <a href="#">- Greenville, WI</a><br />
+                    </small>
+                    <br />
+                </div>
+            </div>
+
+            <!--/Primary Location-->
+            <div class="col-lg-6" style="margin-top:-40px;">
+                <h1 class="text-primary">Contact Us For Details.</h1>
+
+                <p class="col-lg-offset-1 text-muted">
+                    <span class="btn-xs text-muted">
+                        *We are more than happy to travel to the outlying areas
+                        for an<br /> additional fee to cover our travel costs.
+                    </span>
+
+
+                </p><br />
+            </div>
+            <div class="separator-2"></div>
+
+
+            <div class="row">
+
+
+
+                @using (Html.BeginForm("Contact", "Home",
+                    new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post,
+                    new { @id = "contact-form", role = "form" }))
+                {
+                    <div class="col-md-6">
+                        <div class="col-lg-offset-1">
+                            <div class="form">
+                                <div class="form-group">
+
+                                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Your Name *", required = "required" })
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Your Email *", required = "required" })
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", placeholder = "Your Phone *", required = "required" })
+
+                                </div>
+                                <div class="form-group">
+
+                                    @Html.TextAreaFor(m => m.Message, new { @class = "form-control job-description", placeholder = "Job Description", required = "required" })
+                                </div>
+                                <div class="button-wrapper text-center">
+                                    <input type="submit" value="Send Email" name="submit" class="btn-success">
+                                    <span class="btn-xs text-primary">* Required Fields</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+
+
+
+
+
+            </div>
+        </div>
+        <!--Row-->
+        <div class="row">
+
+
+
+        </div>
+
+        <br />
+        <br />
+        <!---Availible Locations--->
+        <!--Row-->
+        <div class="row ">
+
+            <!--Local Towns-->
+
+            <div class="col-lg-3 text-muted">
+                <strong class="Location"> Local Towns Near New London, WI.:<br /></strong>
+                <small class="Location">
+                    <a href="#">- Northport, WI</a><br />
+                    <a href="#">- Sugar Bush, WI</a><br />
+                    <a href="#"> - Royalton, WI</a><br />
+                    <a href="#">- Hortonville, WI</a><br />
+                    <a href="#">- Nowell, WI</a><br />
+                    <a href="#">- North Readfield, WI</a><br />
+                    <a href="#">- Stephensville, WI</a><br />
+                    <a href="#">- Little Wolf, WI</a><br />
+                    <a href="#">- Readfield, WI</a><br />
+                    <a href="#">- Shiocton, WI</a> <br />
+                    <a href="#">- Dale, WI</a><br />
+                    <a href="#">- Bear Creek, WI</a><br />
+                </small>
+                <br />
+            </div>
+            <!--/Local Towns-->
+            <!--Local Towns Three Lakes-->
+            <div class="col-lg-3 text-muted">
+                <strong class="Location"> Local Towns Near Three Lakes, WI.:<br /></strong>
+                <small class="Location">
+                    <a href="#">-  Sugar Camp, WI</a><br />
+                    <a href="#"> -  Eagle River, WI</a><br />
+                    <a href="#"> -  Gagen, WI</a><br />
+                    <a href="#">-  Starks, WI</a><br />
+                    <a href="#">-  Hiles, WI</a><br />
+                    <a href="#">-  Roosevelt, WI</a><br />
+                    <a href="#">-  Newbold, WI</a><br />
+                </small>
+                <br />
+            </div>
+            <!--/Local Towns Three Lakes-->
+            <!--Within 25miles New London-->
+            <div class="col-lg-3 text-muted">
+                <strong class="Location">Within 25 miles of New London:</strong><br />
+                <small class="Location">
+                    <a href="#"> - Black Creek, WI</a><br />
+                    <a href="#"> - Freedom, WI</a><br />
+                    <a href="#"> - Nichols, WI</a><br />
+                    <a href="#"> - Seymour, WI</a><br />
+                    <a href="#"> - Shiocton, WI</a><br />
+                    <a href="#"> - Bear Creek, WI</a><br />
+                    <a href="#">- Big Falls, WI</a><br />
+                    <a href="#"> - Clintonville, WI</a><br />
+                    <a href="#"> - Dale, WI</a><br />
+                    <a href="#"> - Embarrass, WI</a><br />
+                    <a href="#">- Fremont, WI</a><br />
+                    <a href="#"> - Hortonville, WI</a><br />
+                    <a href="#">- Iola, WI</a><br />
+                </small>
+                <!--/Within 25miles New London-->
+
+            </div>
+            <!--Within 25miles Three Lakes-->
+            <!--Within 25 Miles of Three Lakes-->
+            <div class="col-lg-3 text-muted">
+
+                <strong>
+                    Within 25 Miles of Three Lakes:
+                </strong>
+                <br />
+                <small class="Location">
+                    <a href="#">-River, WI </a><br />
+                    <a href="#">- Phelps Vilas,	WI</a><br />
+                    <a href="#">- Rhinelander, WI</a><br />
+                    <a href="#">- Conover, WI</a><br />
+                    <a href="#">- Long Lake, WI</a><br />
+                    <a href="#">- Saint Germain, WI</a><br />
+                    <a href="#">- Mc Naughton, WI</a><br />
+                    <a href="#">- Lake Tomahawk,WI</a><br />
+                    <a href="#">- Crandon Forest, WI</a><br />
+                    <a href="#">- Star Lake, WI</a><br />
+                    <a href="#">- Pelican Lake, WI</a><br />
+                    <a href="#">- Sayner, WI</a><br />
+                </small>
+            </div>
+
+            <!--/Within 25 Miles of Three Lakes-->
+
+            <br />
+            <br />
+            <br />
+
+            <!--Don't See Your City Listed?-->
+            <!--/Don't See Your City Listed?-->
+
+        </div>
+        <!--/Row-->
+        <!---/Availible Locations--->
+        <!--/Buttons-->
+        <!--/Container-->
+
+    </div>
+    <!--/Container-->
+
+</section>
+<!-- /Contact Section -->

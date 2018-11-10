@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Zion Construction</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    
+    <link rel="Shortcut Icon" href="~/favicon.ico" type="image/x-icon" />
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gray">
+        @*<a class="navbar-brand" href="#">LOGO</a>*@
+        <img src="~/Images/Smaller250pxIcon.png" id="LogoHeader" />
+        <div class="container">
+            @Html.ActionLink("Zion Construction", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item" id="Home">@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" }) </li>
+                        <li class="nav-item" id="About">@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" })</li>
+                        <li class="nav-item" id="Contact">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })</li>
+                        <li class="nav-item" id="ServicesPage">@Html.ActionLink("Services", "Services", "Home", null, new { @class = "nav-link" })</li>
+                        <li class="nav-item" id="Photos">@Html.ActionLink("Photos", "Photos", "Home", null, new { @class = "nav-link" })</li>
+                    </ul>
+                </div>
+</div>
+    </nav>
+
+
+    <div id="wrap">
+        <div class="container-fluid body-content" id="main">
+
+                    <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true" style="margin-top:4em;">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">× Close</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="" class="enlargeImageModalSource" style="width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @RenderBody()
+                    <hr />
+
+            </div>
+        </div>
+
+                <footer id="footer" class="block block-bg-grey-dark col-md-10 offset-1" data-block-bg-img="~/images/SkyBackgorund.jpg" data-stellar-background-ratio="0.4">
+                    <div class="jumbotron" id="footer">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <br />
+
+                                <h2 id="ColumHeader"> Contact Us </h2>
+
+                                @* Location icon/ Address *@
+                                <span id="ContactIcons" class="glyphicon glyphicon-map-marker"> </span>
+                                Appleton, WI<br />
+                                <br />
+
+                                @*Mail Icon / Email Address*@
+                                <span id="ContactIcons" class="glyphicon glyphicon-envelope">
+                                </span> <a TheNorthernHandyman@gmail.com"> Avanzion@gmail.com</a>
+                                <br />
+                                <br />
+
+                                @* Phone Icon / Phone Number *@
+                                <span id="ContactIcons" class="glyphicon glyphicon-phone"></span> (920) 850-6533
+                                <br />
+
+                                <h4 class="text-uppercase">
+                                    Connect With Us!
+                                </h4>
+                                <!--social media icons-->
+                                @*<div class="social-media social-media-stacked">*@
+
+                                    <a href="https://www.facebook.com/NorthernHandyman/" style="font-size:4em" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+
+                                @*</div>*@
+
+
+
+
+                                @* End Of Logo Colum *@
+                            </div>
+
+                            @* UseFul Links Colum *@
+                            <div class="col-md-3">
+                                <br />
+
+
+                                @* Link-Header *@
+                                <h2>Useful Links</h2>
+
+                                @* Vertical Nav-List *@
+                                @*<ul class="nav menu">
+                                    <li class="item-121"><a href="/">Home</a></li>
+                                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                                    <li>@Html.ActionLink("Services", "Services", "Home")</li>
+                                    <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                                    <li class="item-126"><a href="/login">Login</a></li>
+                                </ul>*@
+                                @*<div class="container">*@
+                                    @*<nav class="navbar bg-light">*@
+
+                                        <!-- Links -->
+                                        @*<ul class="navbar-nav" style="padding:10px;">
+                                            <li class="nav-item">
+                                                @Html.ActionLink("Home", "Home", "Home")
+                                            </li>
+                                            <li class="nav-item">
+                                                @Html.ActionLink("About", "About", "Home")
+                                            </li>
+                                            <li class="nav-item">
+                                                @Html.ActionLink("Services", "Services", "Home")
+                                            </li>
+                                            <li class="nav-item">
+                                                @Html.ActionLink("Contact Us", "Contact", "Home")
+                                            </li>
+                                            <li class="nav-item">
+                                                @Html.ActionLink("Services", "Services", "Home")
+                                            </li>
+                                        </ul>
+
+                                    </nav>*@
+                                @*</div>*@
+                                <div class="container">
+                                    <ul  style="padding:10px;">
+                                        <li >
+                                            @Html.ActionLink("Home", "Home", "Home")
+                                        </li>
+                                        <li >
+                                            @Html.ActionLink("About", "About", "Home")
+                                        </li>
+                                        <li >
+                                            @Html.ActionLink("Services", "Services", "Home")
+                                        </li>
+                                        <li >
+                                            @Html.ActionLink("Contact Us", "Contact", "Home")
+                                        </li>
+                                        <li >
+                                            @Html.ActionLink("Services", "Services", "Home")
+                                        </li>
+                                    </ul>
+                                </div>
+                                @*Bottom Header*@
+
+                                @*End of Useful Link Colum*@
+                            </div>
+
+
+
+                            @* Connect US Header *@
+
+
+
+                            @* End of Contact Us Header *@
+
+                            <div class="col-md-5">
+                                <h4 class="text-uppercase">
+                                    Contact Us
+                                </h4>
+                                <div class="form">
+                                    @*<div id="sendmessage">Your message has been sent. Thank you!</div>*@
+                                    <div id="errormessage"></div>
+                                    <form action="" method="post" role="form" class="contactForm">
+                                        <div class="form-group row">
+                                            <input type="text" name="name" class="form-control col-md-4" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                            <div class="validation"></div>
+                                        @*</div>*@
+                                        @*<div class="form-group col-md-2">*@
+                                            <input type="email" class="form-control col-md-4" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                            <div class="validation"></div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <input type="text" class="form-control col-md-4" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                            <div class="validation"></div>
+                                        @*</div>
+                                        <div class="form-group">*@
+                                            <input type="text" class="form-control col-md-4" name="phone" id="phone" placeholder="Phone" data-rule="minlen:4" data-msg="Please enter at least 7 chars for phone" />
+                                            <div class="validation"></div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <textarea class="form-control col-md-4" id="message" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                            <div class="validation"></div>
+                                            <div class="btn btn-success btn-lg col-md-4" style="height:6em;">Send Email <i class="fas fa-envelope-square"></i></div>
+                                            @*<div class="text-center">*@@*<input id="testButton" value="Send Email" type="button" class="btn btn-success btn-lg col-md-4" style="height:6em;"/>*@@*</div>*@
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        @*<footer>
+                            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+                        </footer>*@
+                    </div>
+                </footer>
+                @Scripts.Render("~/bundles/jquery")
+                @Scripts.Render("~/bundles/bootstrap")
+                @RenderSection("scripts", required: false)
+
+    <script type="text/javascript">
+
+
+                function sendEmail() {
+
+                    var url = '/Home/SendEmail?Name=__NAME__&amp;Phone=__PHONE__&amp;Message=__MESSAGE__&amp;Email=__EMAIL__';
+                    var newUrl = url.replace('__NAME__', $("#name").val());
+                    newUrl = newUrl.replace('__PHONE__', $("#phone").val());
+                    newUrl = newUrl.replace("__MESSAGE__", $("#message").val());
+                    newUrl = newUrl.replace("__EMAIL__", $("#email").val());
+                    $.ajax({
+                        type: "POST",
+                        url: newUrl,
+
+                        success: function () {
+                            alert('Success');
+                            $("#email").val("");
+                            $("#message").val("");
+                            $("#phone").val("");
+                            $("#name").val("");
+                            $("#subject").val("");
+                        }
+                    });
+                }
+                $("#testButton").click(sendEmail);
+                $(document).ready(function () {
+                    //var hash = window.location.hash;
+                    var hash2 = "#" + localStorage.getItem("StartingPage");
+                    $(hash2).addClass('active');
+                    var a = $(hash2);
+                    a.css("-webkit-border-radius", "50px");
+                    a.css("-moz-border-radius", "50px");
+                    a.css("border-radius", "50px");
+                    a.css("border", "none");
+                    a.css("background-color", "black");
+                });
+
+                $(function () {
+                    $('img').on('click', function () {
+                        $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+                        $('#enlargeImageModal').modal('show');
+                    });
+                });
+
+
+                $('.nav-item').mouseover(function () {
+                    //$('.nav-link').css("background-color", "gray");
+                    var a = $(this).children();
+                    //a.css("color", "white");
+                    a.css("-webkit-border-radius", "50px");
+                    a.css("-moz-border-radius", "50px");
+                    a.css("border-radius", "50px");
+                    a.css("border", "none");
+                    if ($(this).hasClass("active")) {
+                    }
+                    else {
+                        a.css("color", "white");
+                    }
+                    //
+                });
+                $('.nav-item').mouseleave(function () {
+                    //this.$('.nav-link').css("background-color", "white");
+                    var a = $(this).children();
+                    var c = a.find('li.active');
+                    a.css("background-color", "inherit");
+                    if ($(this).hasClass("active")) {
+                    }
+                    else {
+                        a.css("color", "rgba(255, 255, 255, 0.5)");
+                    }
+                    
+                });
+
+        //        $('.nav-item').click(function () {
+        //            //$('.nav-link').css("background-color", "gray");
+        //            var a = $(this).children();
+        //            a.addClass("active");
+ 
+        //            //a.css("border-r", "white");
+        //});
+                $('.navbar a').on('click', function () {
+                    $('.navbar').find('li.active').removeClass('active');
+                    window.location.hash = $(this).parent('li').attr('id');
+                    localStorage.setItem("StartingPage", $(this).parent('li').attr('id'));
+                    $(this).parent('li').addClass('active');
+                    $(this).parent('li').focus();
+                });
+
+
+                $('.navbar-brand').mouseover(function () {
+                    //$('.nav-link').css("background-color", "gray");
+                    var a = $(this);
+                    a.css("background-color", "black");
+                    a.css("color", "white");
+                    a.css("-webkit-border-radius", "50px");
+                    a.css("-moz-border-radius", "50px");
+                    a.css("border-radius", "50px");
+                    a.css("border", "none");
+                    a.css("padding", "1em");
+                    //a.css("border-r", "white");
+                });
+                $('.navbar-brand').mouseleave(function () {
+                    //this.$('.nav-link').css("background-color", "white");
+                    var a = $(this);
+                    a.css("background-color", "inherit");
+                    a.css("padding", "0em");
+                    //a.css("color", "rgba(255, 255, 255, 0.5)");
+                });
+
+
+                </script>
+</body>
+</html>

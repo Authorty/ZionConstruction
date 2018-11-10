@@ -1,0 +1,189 @@
+﻿body {
+    /*padding-top: 50px;*/
+    /*padding-bottom: 20px;*/
+    background-image: url(../Images/MountainBackground.jpg);
+    line-height:inherit;
+    /*background-repeat:no-repeat;*/
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-item:hover {
+    background-color:black;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+     border-radius: 50px;
+     border: none;
+     color:white;
+    
+
+}
+/*.nav-item:focus {
+    background-color:black;
+
+
+}*/
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.jumbotron {
+    background:#4D4C4A;
+    border:15px  solid gray;
+    border-radius:50px;
+    padding-top:0em;
+}
+#Header {
+    background:#4D4C4A;
+    border:15px  groove gray;
+    border-radius:50px;
+}
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+#LogoHeader {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+     border-radius: 0px;
+
+}
+img {
+    cursor: zoom-in;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+     border-radius: 50px;
+     border: none;
+}
+/*.navbar-header {
+    background:#4D4C4A;
+}*/
+#footer
+{
+
+margin-bottom:0;
+}
+#Services:hover {
+    background-color:black;
+}
+#Services2:hover {
+    background-color:black;
+}
+#Services3:hover {
+    background-color:black;
+}
+#Services4:hover {
+    background-color:black;
+}
+#Services5:hover {
+    background-color:black;
+}
+#Services6:hover {
+    background-color:black;
+}
+#Services7:hover {
+    background-color:black;
+}
+#Services8:hover {
+    background-color:black;
+}
+#Services9:hover {
+    background-color:black;
+}
+#Services10:hover {
+    background-color:black;
+}
+#Services11:hover {
+    background-color:black;
+}
+#Services12:hover {
+    background-color:black;
+}
+#Services13:hover {
+    background-color:black;
+}
+#Services14:hover {
+    background-color:black;
+}
+
+/*#Services p a:hover {
+    background-color:white;
+}*/
+.jumbotron .btn-default {
+    background-color:white;
+}
+.navbar {
+    background:#4D4C4A;
+    height:7em;
+    padding-top:1px;
+     z-index: 9999;
+}
+.navbar-nav {
+    z-index:1001;
+}
+
+.navbar-brand {
+    font-size:35px;
+}
+
+.bg-gray {
+    background: #4D4C4A;
+    color: #4D4C4A;
+    background-color: #4D4C4A;
+}
+.container {
+    background: #4D4C4A;
+}
+@media (max-width: 968px) {
+  .container-fluid {
+    width: 100%;
+    max-width: none;
+  }
+  .navbar {
+    background:#4D4C4A;
+    height:7em;
+    padding-top:1px;
+    width:100%;
+}
+    .container {
+    width: 100%;
+    max-width: none;
+  }
+}
+#wrap {
+    padding-top:4em;
+}
+
+a.linkColors {
+    color:#BCBABB;
+    font-size:30px;
+}
+a.linkColors:active {
+    color:#ff0000;
+}
+a.linkColors:link {
+    color:#00ff21;
+}
+a.linkColors:visited {
+    color:#0026ff;
+}
+p, h1, h2,h3,h4,h5 {
+    color:white;
+}
+
+/*footer {
+  bottom: -50px;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}*/
