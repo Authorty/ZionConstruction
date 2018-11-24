@@ -9,5 +9,6 @@ namespace ZionConstruction.Models
     {
         public string Group { get; set; }
         public string Image { get; set; }
+        public string Caption { get; set; }
     }
 }

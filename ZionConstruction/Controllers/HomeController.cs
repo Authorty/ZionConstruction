@@ -46,16 +46,27 @@ namespace ZionConstruction.Controllers
             {
 
                 var DirectoryName = imageDirectory.Name;
-                if (DirectoryName != "clients" && DirectoryName != "backgrounds")
-                {
-                    var imagefilePath = "";
 
-                    foreach (var image in imageDirectory.GetFiles())
+                var imagefilePath = "";
+
+                foreach (var image in imageDirectory.GetFiles().Where(x=>x.Extension != ".txt"))
+                {
+
+                    imagefilePath = @"/WorkImages/" + DirectoryName + "/" + image.Name;
+                    var imageModel = new ImageGroupViewModel { Group = DirectoryName, Image = imagefilePath };
+
+                    foreach (var captionFile in imageDirectory.GetFiles().Where(x => x.Extension == ".txt"))
                     {
-                        imagefilePath = @"/WorkImages/" + DirectoryName + "/" + image.Name;
-                        images.Add(new ImageGroupViewModel { Group = DirectoryName, Image = imagefilePath });
+                        if (Path.GetFileNameWithoutExtension(captionFile.FullName) == Path.GetFileNameWithoutExtension(image.FullName))
+                        {
+                            imageModel.Caption = System.IO.File.ReadAllText(captionFile.FullName);
+                        }
                     }
-                }
+
+
+                        images.Add(imageModel);
+                    }
+                
 
             }
             //imageFiles = imageDir.GetFiles();

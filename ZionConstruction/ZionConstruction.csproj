@@ -207,17 +207,22 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="WorkImages\Decks\20180717_105356.jpg" />
     <Content Include="WorkImages\Stairs\20181031_142740_resized.jpg" />
     <Content Include="WorkImages\Stairs\20181031_142750_resized.jpg" />
     <Content Include="WorkImages\Stairs\20181031_142759_resized.jpg" />
     <Content Include="WorkImages\Stairs\20181031_142808_resized.jpg" />
     <Content Include="WorkImages\Stairs\20181031_142813_resized.jpg" />
     <Content Include="WorkImages\Stairs\Stairs.jpg" />
+    <Content Include="WorkImages\Stairs\Stairs.txt" />
     <Content Include="WorkImages\Stairs\Stairs_backView.jpg" />
     <Content Include="WorkImages\Stairs\Stairs_Concrete.jpg" />
     <Content Include="WorkImages\Stairs\Stairs_full.jpg" />
     <Content Include="WorkImages\Stairs\Stairs_GoingUp.jpg" />
     <Content Include="WorkImages\Stairs\Stairs_SideContcrete.jpg" />
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
+    <None Include="Properties\PublishProfiles\File.pubxml" />
+    <None Include="Properties\PublishProfiles\myAspDeploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -286,7 +291,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="WorkImages\Decks\" />
     <Folder Include="WorkImages\Framing\" />
     <Folder Include="WorkImages\Home Renovations\" />
     <Folder Include="WorkImages\New Construction\" />

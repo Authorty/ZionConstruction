@@ -2,8 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @*<meta name="viewport" content="width=device-width, initial-scale=1.0">*@
+    <meta name="viewport" content="width=device-width, user-scalable=0;">
     <title>@ViewBag.Title - Zion Construction</title>
+
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -15,32 +17,39 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-gray">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gray" >
         @*<a class="navbar-brand" href="#">LOGO</a>*@
-        <img src="~/Images/Smaller250pxIcon.png" id="LogoHeader" />
-        <div class="container">
-            @Html.ActionLink("Zion Construction", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        <div class="showHide">
+            <img src="~/Images/Smaller250pxIcon.png" id="LogoHeader" />
+        </div>
+        <div class="container-fluid">
+            @Html.ActionLink("Zion Construction", "Index", "Home", new { area = "" }, new { @class = "navbar-brand", id="logoName" })
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-             
 
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item" id="Home">@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" }) </li>
-                        <li class="nav-item" id="About">@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" })</li>
-                        <li class="nav-item" id="Contact">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })</li>
-                        <li class="nav-item" id="ServicesPage">@Html.ActionLink("Services", "Services", "Home", null, new { @class = "nav-link" })</li>
-                        <li class="nav-item" id="Photos">@Html.ActionLink("Photos", "Photos", "Home", null, new { @class = "nav-link" })</li>
-                    </ul>
-                </div>
-</div>
+
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item" id="Home">@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" }) </li>
+                    <li class="nav-item" id="About">@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item" id="Contact">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item" id="ServicesPage">@Html.ActionLink("Services", "Services", "Home", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item" id="Photos">@Html.ActionLink("Photos", "Photos", "Home", null, new { @class = "nav-link" })</li>
+                </ul>
+            </div>
+        </div>
     </nav>
-
 
     <div id="wrap">
         <div class="container-fluid body-content" id="main">
+
+
+
+
+
 
                     <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true" style="margin-top:4em;">
                         <div class="modal-dialog modal-lg" role="document">
@@ -245,6 +254,8 @@
                 }
                 $("#testButton").click(sendEmail);
                 $(document).ready(function () {
+
+                    expandCollapse();
                     //var hash = window.location.hash;
                     var hash2 = "#" + localStorage.getItem("StartingPage");
                     $(hash2).addClass('active');
@@ -327,6 +338,38 @@
                     a.css("padding", "0em");
                     //a.css("color", "rgba(255, 255, 255, 0.5)");
                 });
+
+
+                var expandCollapse = function () {
+                    if ($(window).width() < 768) {
+                        $(function () {
+                            // add a class .collapse to a div .showHide
+                            
+                            $('.showHide').addClass('collapse');
+                            // set display: "" in css for the toggle button .btn.btn-primary
+                            $('#LogoHeader').css('display', 'none');// removes display property to make it visible
+                            $('.navbar').css('height', 'inherit');
+                            $('.navbar').css('font-size', 'inherit');
+                            $('#logoName').css('font-size', 'inherit');
+                        });
+                    }
+                    else {
+                        $(function () {
+                            // remove a class .collapse from a div .showHide
+                            $('.showHide').removeClass('collapse');
+                            // set display: none in css for the toggle button .btn.btn-primary  
+                            $('#LogoHeader').css('display', '');// hides button display on bigger screen
+                            $('#logoName').css('font-size', 35);
+                            //$('.navbar').css('height', 7);
+                        });
+                    }
+                }
+                $(window).resize(expandCollapse); // calls the function when the window first loads
+
+
+
+
+
 
 
                 </script>

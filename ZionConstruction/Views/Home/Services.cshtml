@@ -4,16 +4,30 @@
 }
 
 <h2>Services</h2>
+@Html.Hidden("RedirectToDeckBuilding", Url.Action("DeckBuilding", "Services"))
+@Html.Hidden("RedirectToGeneralContracting", Url.Action("GeneralContracting", "Services"))
+@Html.Hidden("RedirectToAdditions", Url.Action("Additions", "Services"))
+@Html.Hidden("RedirectToDoors", Url.Action("Doors", "Services"))
+@Html.Hidden("RedirectToFinishWork", Url.Action("FinishWork", "Services"))
+@Html.Hidden("RedirectToConcrete", Url.Action("Concrete", "Services"))
+@Html.Hidden("RedirectToFlooring", Url.Action("Flooring", "Services"))
+@Html.Hidden("RedirectToFraming", Url.Action("Framing", "Services"))
+@Html.Hidden("RedirectToNewConstruction", Url.Action("NewConstruction", "Services"))
+@Html.Hidden("RedirectToPainting", Url.Action("Painting", "Services"))
+@Html.Hidden("RedirectToRemodels", Url.Action("Remodels", "Services"))
+@Html.Hidden("RedirectToRoofing", Url.Action("Roofing", "Services"))
+@Html.Hidden("RedirectToSiding", Url.Action("Siding", "Services"))
+@Html.Hidden("RedirectToWindows", Url.Action("Windows", "Services"))
 
 <div class="row offset-2">
-    <div class="jumbotron col-md-4" id="Services" style="margin:45px;">
+    <div class="jumbotron col-md-4 DeckBuilding" id="Services" style="margin:45px;">
         <h2>Deck Building and Design</h2>
         <p>
             List of the services
         </p>
         <p><a class="btn btn-default" id="test" href="@Url.Action("DeckBuilding","Services")">Learn more &raquo;</a></p>
     </div>
-    <div class="jumbotron col-md-4" id="Services" style="margin:45px;">
+    <div class="jumbotron col-md-4 GeneralContracting" id="Services" style="margin:45px;">
         <h2>General Contracting</h2>
         <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
         <p><a class="btn btn-default" id="test" href="@Url.Action("GeneralContracting","Services")">Learn more &raquo;</a></p>
@@ -22,19 +36,19 @@
 </div>
 
 <div class="row offset-1">
-    <div class="jumbotron col-md-3" id="Services" style="margin:45px;">
+    <div class="jumbotron col-md-3 Additions" id="Services" style="margin:45px;">
         <h2>Additions</h2>
         <p>
             List of the services
         </p>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Additions","Services")">Learn more &raquo;</a></p>
     </div>
-    <div class="jumbotron col-md-3" id="Services" style="margin:45px;">
+    <div class="jumbotron col-md-3 Doors" id="Services" style="margin:45px;">
         <h2>Doors</h2>
         <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Doors","Services")">Learn more &raquo;</a></p>
     </div>
-    <div class="jumbotron col-md-3" id="Services" style="margin:45px;">
+    <div class="jumbotron col-md-3 FinishWork" id="Services" style="margin:45px;">
         <h2>Finish Work</h2>
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" id="test" href="@Url.Action("FinishWork","Services")">Learn more &raquo;</a></p>
@@ -42,19 +56,19 @@
 </div>
 
 <div class="row offset-1">
-    <div class="jumbotron col-md-3" id="Services" style="margin:45px;">
+    <div class="jumbotron col-md-3 Concrete" id="Services" style="margin:45px;">
         <h2>Concrete </h2>
         <p>
             List of the services
         </p>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Concrete","Services")">Learn more &raquo;</a></p>
     </div>
-    <div class="jumbotron col-md-3" id="Services" style="margin:45px;">
+    <div class="jumbotron col-md-3 Flooring" id="Services" style="margin:45px;">
         <h2>Flooring</h2>
         <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Flooring","Services")">Learn more &raquo;</a></p>
     </div>
-    <div class="jumbotron col-md-3" id="Services" style="margin:45px;">
+    <div class="jumbotron col-md-3 Framing" id="Services" style="margin:45px;">
         <h2>Framing</h2>
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Framing","Services")">Learn more &raquo;</a></p>
@@ -62,19 +76,19 @@
 </div>
 
 <div class="row offset-1">
-    <div class="jumbotron col-md-3" id="Services" style="margin:45px;">
+    <div class="jumbotron col-md-3 NewConstruction" id="Services" style="margin:45px;">
         <h2>New Construction</h2>
         <p>
             List of the services
         </p>
         <p><a class="btn btn-default" id="test" href="@Url.Action("New Construction","Services")">Learn more &raquo;</a></p>
     </div>
-    <div class="jumbotron col-md-3" id="Services" style="margin:45px;">
+    <div class="jumbotron col-md-3 Painting" id="Services" style="margin:45px;">
         <h2>Painting</h2>
         <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Painting","Services")">Learn more &raquo;</a></p>
     </div>
-    <div class="jumbotron col-md-3" id="Services" style="margin:45px;">
+    <div class="jumbotron col-md-3 Remodels" id="Services" style="margin:45px;">
         <h2>Remodels</h2>
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Remodels","Services")">Learn more &raquo;</a></p>
@@ -82,21 +96,101 @@
 </div>
 
 <div class="row offset-1">
-    <div class="jumbotron col-md-3" id="Services" style="margin:45px;">
+    <div class="jumbotron col-md-3 Roofing" id="Services" style="margin:45px;">
         <h2>Roofing</h2>
         <p>
             List of the services
         </p>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Roofing","Services")">Learn more &raquo;</a></p>
     </div>
-    <div class="jumbotron col-md-3" id="Services" style="margin:45px;">
+    <div class="jumbotron col-md-3 Siding" id="Services" style="margin:45px;">
         <h2>Siding</h2>
         <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Siding","Services")">Learn more &raquo;</a></p>
     </div>
-    <div class="jumbotron col-md-3" id="Services" style="margin:45px;">
+    <div class="jumbotron col-md-3 Windows" id="Services" style="margin:45px;">
         <h2>Windows</h2>
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Windows","Services")">Learn more &raquo;</a></p>
     </div>
 </div>
+
+@section Scripts{
+    <script type="text/javascript">
+
+        $('.Windows').click(function () {
+
+            var url = $("#RedirectToWindows").val();
+            location.href = url;
+        });
+
+        $('.Siding').click(function () {
+
+            var url = $("#RedirectToSiding").val();
+            location.href = url;
+        });
+        $('.Roofing').click(function () {
+
+            var url = $("#RedirectToRoofing").val();
+            location.href = url;
+        });
+        $('.Remodels').click(function () {
+
+            var url = $("#RedirectToRemodels").val();
+            location.href = url;
+        });
+        $('.Painting').click(function () {
+
+            var url = $("#RedirectToPainting").val();
+            location.href = url;
+        });
+        $('.NewConstruction').click(function () {
+
+            var url = $("#RedirectToNewConstruction").val();
+            location.href = url;
+        });
+        $('.Framing').click(function () {
+
+            var url = $("#RedirectToFraming").val();
+            location.href = url;
+        });
+        $('.Flooring').click(function () {
+
+            var url = $("#RedirectToFlooring").val();
+            location.href = url;
+        });
+        $('.Concrete').click(function () {
+
+            var url = $("#RedirectToConcrete").val();
+            location.href = url;
+        });
+        $('.FinishWork').click(function () {
+
+            var url = $("#RedirectToFinishWork").val();
+            location.href = url;
+        });
+        $('.Doors').click(function () {
+
+            var url = $("#RedirectToDoors").val();
+            location.href = url;
+        });
+        $('.Additions').click(function () {
+
+            var url = $("#RedirectToAdditions").val();
+            location.href = url;
+        });
+        $('.GeneralContracting').click(function () {
+
+            var url = $("#RedirectToGeneralContracting").val();
+            location.href = url;
+        });
+        $('.DeckBuilding').click(function () {
+
+            var url = $("#RedirectToDeckBuilding").val();
+            location.href = url;
+        });
+
+
+
+    </script>
+}
