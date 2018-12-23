@@ -175,6 +175,8 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\BackgroundMountainRange.jpg" />
+    <Content Include="Images\high-himalayan-mountain-view-at-the-annapurna-base-camp-in-nepal.jpg" />
     <Content Include="Images\MountainBackground.jpg" />
     <Content Include="Images\SkyBackground.jpg" />
     <Content Include="Images\sky_BackgroundFullSize.jpg" />
@@ -291,9 +293,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="WorkImages\Additions\" />
+    <Folder Include="WorkImages\Concrete\" />
+    <Folder Include="WorkImages\Finish Work\" />
+    <Folder Include="WorkImages\Flooring\" />
     <Folder Include="WorkImages\Framing\" />
+    <Folder Include="WorkImages\General Contracting\" />
     <Folder Include="WorkImages\Home Renovations\" />
     <Folder Include="WorkImages\New Construction\" />
+    <Folder Include="WorkImages\Painting\" />
+    <Folder Include="WorkImages\Remodels\" />
     <Folder Include="WorkImages\Roofing\" />
     <Folder Include="WorkImages\Siding\" />
     <Folder Include="WorkImages\Windows\" />

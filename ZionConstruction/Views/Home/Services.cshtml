@@ -19,83 +19,186 @@
 @Html.Hidden("RedirectToSiding", Url.Action("Siding", "Services"))
 @Html.Hidden("RedirectToWindows", Url.Action("Windows", "Services"))
 
-<div class="row offset-2">
+<div class="row offset-2 FirstRow" id="TopRow">
     <div class="jumbotron col-md-4 DeckBuilding" id="Services" style="margin:45px;">
         <h2>Deck Building and Design</h2>
-        <p>
-            List of the services
-        </p>
+
+        <div class="jumbotron" id="ServicesParagraph">
+            <p>
+                Adding a deck can be a great way to add functional space to your area.  It can be as simple as a small stoop to help you easily get in and out of your home.  To something extravagant that can be the center of attention at family gatherings.  Let Zion Construction make your deck dreams come true within appleton Wisconsin.
+            </p>
+        </div>
+        <ol class="list-group" id="ServicesList">
+            <li class="list-group-item"> <i class="fas fa-star-of-life"></i>  Stoops</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Decks</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Gazeebos</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Stairs</li>
+        </ol>
         <p><a class="btn btn-default" id="test" href="@Url.Action("DeckBuilding","Services")">Learn more &raquo;</a></p>
     </div>
     <div class="jumbotron col-md-4 GeneralContracting" id="Services" style="margin:45px;">
         <h2>General Contracting</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <div class="jumbotron" id="ServicesParagraph">
+            <p>
+                I have been in the trade for 15+ years and can make any project happen.  It's important when doing general contracting that you trust who is doing the work.  I have dedicated subs that I trust to work on our jobs.
+            </p>
+        </div>
+        <ol class="list-group" id="ServicesList">
+            <li class="list-group-item"> <i class="fas fa-star-of-life"></i>  Renovations</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> New Construction</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Commercial Jobs</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Residential Jobs</li>
+        </ol>
         <p><a class="btn btn-default" id="test" href="@Url.Action("GeneralContracting","Services")">Learn more &raquo;</a></p>
     </div>
 
 </div>
 
-<div class="row offset-1">
+<div class="row offset-1 SecondRow" id="MidRows">
     <div class="jumbotron col-md-3 Additions" id="Services" style="margin:45px;">
         <h2>Additions</h2>
-        <p>
-            List of the services
-        </p>
+        <div class="jumbotron" id="ServicesParagraph">
+            <p>
+                Putting an addition on your home can be a great way to add additional space.  When working on additions, it's important to do it correctly.
+            </p>
+        </div>
+        <ol class="list-group" id="ServicesList">
+            <li class="list-group-item"> <i class="fas fa-star-of-life"></i>  Sunrooms</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Dormers</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> And many more!</li>
+            @*<li class="list-group-item"><i class="fas fa-star-of-life"></i> Stairs</li>*@
+        </ol>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Additions","Services")">Learn more &raquo;</a></p>
     </div>
     <div class="jumbotron col-md-3 Doors" id="Services" style="margin:45px;">
         <h2>Doors</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <div class="jumbotron" id="ServicesParagraph">
+            <p>
+                Doors are very 
+            </p>
+        </div>
+        <ol class="list-group" id="ServicesList">
+            <li class="list-group-item"> <i class="fas fa-star-of-life"></i>  Metal</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Wood</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Interior</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Exterior</li>
+        </ol>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Doors","Services")">Learn more &raquo;</a></p>
     </div>
     <div class="jumbotron col-md-3 FinishWork" id="Services" style="margin:45px;">
         <h2>Finish Work</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <div class="jumbotron" id="ServicesParagraph">
+            <p>
+                Adding a deck can be a great way to add functional space to your area.  It can be as simple as a small stoop to help you easily get in and out of your home.  To something extravagant that can be the center of attention at family gatherings.  Let Zion Construction make your deck dreams come true within appleton Wisconsin.
+            </p>
+        </div>
+        <ol class="list-group" id="ServicesList">
+            <li class="list-group-item"> <i class="fas fa-star-of-life"></i>  Stoops</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Decks</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Gazeebos</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Stairs</li>
+        </ol>
         <p><a class="btn btn-default" id="test" href="@Url.Action("FinishWork","Services")">Learn more &raquo;</a></p>
     </div>
 </div>
 
-<div class="row offset-1">
+<div class="row offset-1 ThirdRow" id="MidRows">
     <div class="jumbotron col-md-3 Concrete" id="Services" style="margin:45px;">
         <h2>Concrete </h2>
-        <p>
-            List of the services
-        </p>
+        <div class="jumbotron" id="ServicesParagraph">
+            <p>
+                Adding a deck can be a great way to add functional space to your area.  It can be as simple as a small stoop to help you easily get in and out of your home.  To something extravagant that can be the center of attention at family gatherings.  Let Zion Construction make your deck dreams come true within appleton Wisconsin.
+            </p>
+        </div>
+        <ol class="list-group" id="ServicesList">
+            <li class="list-group-item"> <i class="fas fa-star-of-life"></i>  Stoops</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Decks</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Gazeebos</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Stairs</li>
+        </ol>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Concrete","Services")">Learn more &raquo;</a></p>
     </div>
     <div class="jumbotron col-md-3 Flooring" id="Services" style="margin:45px;">
         <h2>Flooring</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <div class="jumbotron" id="ServicesParagraph">
+            <p>
+                Adding a deck can be a great way to add functional space to your area.  It can be as simple as a small stoop to help you easily get in and out of your home.  To something extravagant that can be the center of attention at family gatherings.  Let Zion Construction make your deck dreams come true within appleton Wisconsin.
+            </p>
+        </div>
+        <ol class="list-group" id="ServicesList">
+            <li class="list-group-item"> <i class="fas fa-star-of-life"></i>  Stoops</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Decks</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Gazeebos</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Stairs</li>
+        </ol>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Flooring","Services")">Learn more &raquo;</a></p>
     </div>
     <div class="jumbotron col-md-3 Framing" id="Services" style="margin:45px;">
         <h2>Framing</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <div class="jumbotron" id="ServicesParagraph">
+            <p>
+                Adding a deck can be a great way to add functional space to your area.  It can be as simple as a small stoop to help you easily get in and out of your home.  To something extravagant that can be the center of attention at family gatherings.  Let Zion Construction make your deck dreams come true within appleton Wisconsin.
+            </p>
+        </div>
+        <ol class="list-group" id="ServicesList">
+            <li class="list-group-item"> <i class="fas fa-star-of-life"></i>  Stoops</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Decks</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Gazeebos</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Stairs</li>
+        </ol>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Framing","Services")">Learn more &raquo;</a></p>
     </div>
 </div>
 
-<div class="row offset-1">
+<div class="row offset-1 FourthRow" id="MidRows">
     <div class="jumbotron col-md-3 NewConstruction" id="Services" style="margin:45px;">
         <h2>New Construction</h2>
-        <p>
-            List of the services
-        </p>
+        <div class="jumbotron" id="ServicesParagraph">
+            <p>
+                Adding a deck can be a great way to add functional space to your area.  It can be as simple as a small stoop to help you easily get in and out of your home.  To something extravagant that can be the center of attention at family gatherings.  Let Zion Construction make your deck dreams come true within appleton Wisconsin.
+            </p>
+        </div>
+        <ol class="list-group" id="ServicesList">
+            <li class="list-group-item"> <i class="fas fa-star-of-life"></i>  Stoops</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Decks</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Gazeebos</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Stairs</li>
+        </ol>
         <p><a class="btn btn-default" id="test" href="@Url.Action("New Construction","Services")">Learn more &raquo;</a></p>
     </div>
     <div class="jumbotron col-md-3 Painting" id="Services" style="margin:45px;">
         <h2>Painting</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <div class="jumbotron" id="ServicesParagraph">
+            <p>
+                Adding a deck can be a great way to add functional space to your area.  It can be as simple as a small stoop to help you easily get in and out of your home.  To something extravagant that can be the center of attention at family gatherings.  Let Zion Construction make your deck dreams come true within appleton Wisconsin.
+            </p>
+        </div>
+        <ol class="list-group" id="ServicesList">
+            <li class="list-group-item"> <i class="fas fa-star-of-life"></i>  Stoops</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Decks</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Gazeebos</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Stairs</li>
+        </ol>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Painting","Services")">Learn more &raquo;</a></p>
     </div>
     <div class="jumbotron col-md-3 Remodels" id="Services" style="margin:45px;">
         <h2>Remodels</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <div class="jumbotron" id="ServicesParagraph">
+            <p>
+                Adding a deck can be a great way to add functional space to your area.  It can be as simple as a small stoop to help you easily get in and out of your home.  To something extravagant that can be the center of attention at family gatherings.  Let Zion Construction make your deck dreams come true within appleton Wisconsin.
+            </p>
+        </div>
+        <ol class="list-group" id="ServicesList">
+            <li class="list-group-item"> <i class="fas fa-star-of-life"></i>  Stoops</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Decks</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Gazeebos</li>
+            <li class="list-group-item"><i class="fas fa-star-of-life"></i> Stairs</li>
+        </ol>
         <p><a class="btn btn-default" id="test" href="@Url.Action("Remodels","Services")">Learn more &raquo;</a></p>
     </div>
 </div>
 
-<div class="row offset-1">
+<div class="row offset-1 FifthRow" id="MidRows">
     <div class="jumbotron col-md-3 Roofing" id="Services" style="margin:45px;">
         <h2>Roofing</h2>
         <p>
@@ -117,6 +220,166 @@
 
 @section Scripts{
     <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+            expandCollapse();
+
+        });
+
+        var expandCollapse = function () {
+            if ($(window).width() < 768) {
+                $(function () {
+   
+                    //$('#Services').removeClass('col-md-4');
+                    //$('#Services').removeClass('col-md-3');
+                    //$('#Services').addClass('col-md-12');
+                    //$('#TopRow').removeClass('offset-2');
+                    //$('#MidRows').removeClass('offset-1');
+
+                    $('.FirstRow').removeClass('offset-2');
+                    $('.SecondRow').removeClass('offset-1');
+                    $('.ThirdRow').removeClass('offset-1');
+                    $('.FourthRow').removeClass('offset-1');
+                    $('.FifthRow').removeClass('offset-1');
+
+                    //Remove offset
+                    //$('.Windows').removeClass('offset-1');
+                    //$('.Siding').removeClass('offset-1');
+                    //$('.Roofing').removeClass('offset-1');
+                    //$('.Remodels').removeClass('offset-1');
+                    //$('.Painting').removeClass('offset-1');
+                    //$('.NewConstruction').removeClass('offset-1');
+                    //$('.Framing').removeClass('offset-1');
+                    //$('.Flooring').removeClass('offset-1');
+                    //$('.Concrete').removeClass('offset-1');
+                    //$('.FinishWork').removeClass('offset-1');
+                    //$('.Doors').removeClass('offset-1');
+                    //$('.Additions').removeClass('offset-1');
+                    //$('.GeneralContracting').removeClass('offset-2');
+                    //$('.DeckBuilding').removeClass('offset-2');
+
+                    //Remove old column sizing
+                    $('.Windows').removeClass('col-md-3');
+                    $('.Siding').removeClass('col-md-3');
+                    $('.Roofing').removeClass('col-md-3');
+                    $('.Remodels').removeClass('col-md-3');
+                    $('.Painting').removeClass('col-md-3');
+                    $('.NewConstruction').removeClass('col-md-3');
+                    $('.Framing').removeClass('col-md-3');
+                    $('.Flooring').removeClass('col-md-3');
+                    $('.Concrete').removeClass('col-md-3');
+                    $('.FinishWork').removeClass('col-md-3');
+                    $('.Doors').removeClass('col-md-3');
+                    $('.Additions').removeClass('col-md-3');
+                    $('.GeneralContracting').removeClass('col-md-4');
+                    $('.DeckBuilding').removeClass('col-md-4');
+
+                    //Make 12 col
+                    $('.Windows').addClass('col-md-12');
+                    $('.Siding').addClass('col-md-12');
+                    $('.Roofing').addClass('col-md-12');
+                    $('.Remodels').addClass('col-md-12');
+                    $('.Painting').addClass('col-md-12');
+                    $('.NewConstruction').addClass('col-md-12');
+                    $('.Framing').addClass('col-md-12');
+                    $('.Flooring').addClass('col-md-12');
+                    $('.Concrete').addClass('col-md-12');
+                    $('.FinishWork').addClass('col-md-12');
+                    $('.Doors').addClass('col-md-12');
+                    $('.Additions').addClass('col-md-12');
+                    $('.GeneralContracting').addClass('col-md-12');
+                    $('.DeckBuilding').addClass('col-md-12');
+
+
+
+
+                    // set display: "" in css for the toggle button .btn.btn-primary
+                    //$('#LogoHeader').css('display', 'none');// removes display property to make it visible
+                    //$('.navbar').css('height', 'inherit');
+                    //$('.navbar').css('font-size', 'inherit');
+                    //$('#logoName').css('font-size', 'inherit');
+                });
+            }
+            else {
+                $(function () {
+                    // remove a class .collapse from a div .showHide
+                    //$('#Services').removeClass('col-md-12');
+                    //$('#Services').addClass('col-md-3');
+                    //$('.DeckBuilding').removeClass('col-md-3');
+                    //$('.DeckBuilding').addClass('col-md-4');
+                    //$('.GeneralContracting').removeClass('col-md-3');
+                    //$('.GeneralContracting').addClass('col-md-4');
+                    //$('#TopRow').addClass('offset-2');
+                    //$('#MidRows').addClass('offset-1');
+
+                    //Add offsets back in
+                    $('.FirstRow').addClass('offset-2');
+                    $('.SecondRow').addClass('offset-1');
+                    $('.ThirdRow').addClass('offset-1');
+                    $('.FourthRow').addClass('offset-1');
+                    $('.FifthRow').addClass('offset-1');
+
+
+                    //$('.Windows').addClass('offset-1');
+                    //$('.Siding').addClass('offset-1');
+                    //$('.Roofing').addClass('offset-1');
+                    //$('.Remodels').addClass('offset-1');
+                    //$('.Painting').addClass('offset-1');
+                    //$('.NewConstruction').addClass('offset-1');
+                    //$('.Framing').addClass('offset-1');
+                    //$('.Flooring').addClass('offset-1');
+                    //$('.Concrete').addClass('offset-1');
+                    //$('.FinishWork').addClass('offset-1');
+                    //$('.Doors').addClass('offset-1');
+                    //$('.Additions').addClass('offset-1');
+                    //$('.GeneralContracting').addClass('offset-2');
+                    //$('.DeckBuilding').addClass('offset-2');
+
+
+                    //Remove old sizing
+                    $('.Windows').removeClass('col-md-12');
+                    $('.Siding').removeClass('col-md-12');
+                    $('.Roofing').removeClass('col-md-12');
+                    $('.Remodels').removeClass('col-md-12');
+                    $('.Painting').removeClass('col-md-12');
+                    $('.NewConstruction').removeClass('col-md-12');
+                    $('.Framing').removeClass('col-md-12');
+                    $('.Flooring').removeClass('col-md-12');
+                    $('.Concrete').removeClass('col-md-12');
+                    $('.FinishWork').removeClass('col-md-12');
+                    $('.Doors').removeClass('col-md-12');
+                    $('.Additions').removeClass('col-md-12');
+                    $('.GeneralContracting').removeClass('col-md-12');
+                    $('.DeckBuilding').removeClass('col-md-12');
+
+                    //Add old sizing
+                    $('.Windows').addClass('col-md-3');
+                    $('.Siding').addClass('col-md-3');
+                    $('.Roofing').addClass('col-md-3');
+                    $('.Remodels').addClass('col-md-3');
+                    $('.Painting').addClass('col-md-3');
+                    $('.NewConstruction').addClass('col-md-3');
+                    $('.Framing').addClass('col-md-3');
+                    $('.Flooring').addClass('col-md-3');
+                    $('.Concrete').addClass('col-md-3');
+                    $('.FinishWork').addClass('col-md-3');
+                    $('.Doors').addClass('col-md-3');
+                    $('.Additions').addClass('col-md-3');
+                    $('.GeneralContracting').addClass('col-md-4');
+                    $('.DeckBuilding').addClass('col-md-4');
+
+                    //$('.showHide').removeClass('collapse');
+                    //// set display: none in css for the toggle button .btn.btn-primary  
+                    //$('#LogoHeader').css('display', '');// hides button display on bigger screen
+                    //$('#logoName').css('font-size', 35);
+                    //$('.navbar').css('height', 7);
+                });
+            }
+        }
+        $(window).resize(expandCollapse);
+
 
         $('.Windows').click(function () {
 
