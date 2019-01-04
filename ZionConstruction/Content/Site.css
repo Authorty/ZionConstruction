@@ -1,11 +1,7 @@
 ﻿body {
-    /*padding-top: 50px;*/
-    /*padding-bottom: 20px;*/
-    /*background-image: url(../Images/BackgroundMountainRange.jpg);*/
-    background-image: url('../Images/high-himalayan-mountain-view-at-the-annapurna-base-camp-in-nepal.jpg');
-    /*background-image""*/
+
     line-height: inherit;
-    background-repeat:no-repeat;
+
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -38,7 +34,7 @@
 
 .jumbotron {
     background:#5d626d;
-    border:15px  solid #0069d9;
+    border:15px  solid #baff00;
     /*border-radius:50px;*/
     padding-top:0em;
 }
@@ -164,7 +160,7 @@ border-left:none;
     background-color:white;
 }
 .navbar {
-    background:#4D4C4A;
+    background:black;
     height:7em;
     padding-top:1px;
      z-index: 9999;
@@ -178,7 +174,7 @@ border-left:none;
 }
 
 .bg-gray {
-    background: #4D4C4A;
+    background: black;
     color: #4D4C4A;
     background-color: #4D4C4A;
 }
